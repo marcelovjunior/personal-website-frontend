@@ -7,6 +7,7 @@ import Dashboard from './components/Dashboard';
 import Blog from './components/Blog';
 import './App.css';
 import MobileHeader from './components/MobileHeader';
+import FirstBlog from './components/FirstBlogPost';
 
 function App() {
     return (
@@ -15,18 +16,12 @@ function App() {
                 <MobileHeader />
                 <Sidebar />
                 <div className="content">
-                    <div className="gradient-background">
-                    <div className="glass-container" style={{ top: '80px', left: 'calc(10dvw)', color: '#fff', width: 'calc(75dvw - 80px)', padding: '20px' }}>
-                        <h2>Welcome!</h2>
-                        <p>This is a placeholder text</p>
-
-                    </div>
-                    </div>
                     <Routes>
                         <Route path="/" element={<Home />} />
                         <Route path="/shortener" element={<URLShortener />} />
                         <Route path="/dashboard" element={<Dashboard />} />
                         <Route path="/blog" element={<Blog />} />
+                        <Route path="/blog/first-blog-post" element={<FirstBlog />} />
                     </Routes>
                 </div>
             </div>
