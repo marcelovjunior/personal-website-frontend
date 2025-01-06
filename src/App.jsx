@@ -6,11 +6,13 @@ import URLShortener from './components/URLShortener';
 import Dashboard from './components/Dashboard';
 import Blog from './components/Blog';
 import './App.css';
+import MobileHeader from './components/MobileHeader';
 
 function App() {
     return (
         <Router>
             <div className="app-container">
+                <MobileHeader />
                 <Sidebar />
                 <div className="content">
                     <div className="gradient-background">
